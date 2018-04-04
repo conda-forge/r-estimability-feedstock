@@ -1,4 +1,4 @@
-{% set version = '1.2' %}
+{% set version = '1.3' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,12 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/estimability_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/estimability/estimability_{{ version }}.tar.gz
-  sha256: 30a5b0abae9525209531fe8dea44750f6b296948d35ebbe55759e565ef02688d
+  sha256: a33179c5fbd6a1a623d90cb6f1743148f92c09429fac466867f3ea70946a2e32
 
 build:
   number: 0
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,11 +36,18 @@ test:
 about:
   home: https://CRAN.R-project.org/package=estimability
   license: GPL (>= 3)
-  summary: Provides tools for determining estimability of linear functions of regression coefficients,  and
-    'epredict' methods that handle non-estimable cases correctly.
+  summary: Provides tools for determining estimability of linear functions  of regression coefficients,
+    and 'epredict' methods that handle  non-estimable cases correctly. Estimability
+    theory is discussed in many linear-models textbooks including Chapter 3 of Monahan,
+    JF (2008),  "A Primer on Linear Models", Chapman and Hall (ISBN 978-1-4200-6201-4).
   license_family: GPL3
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
 
 extra:
   recipe-maintainers:
     - johanneskoester
     - bgruening
+    - daler
+    - jdblischak
+    - cbrueffer

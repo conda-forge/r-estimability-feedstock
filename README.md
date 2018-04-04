@@ -7,7 +7,7 @@ Package license: GPL (>= 3)
 
 Feedstock license: BSD 3-Clause
 
-Summary: Provides tools for determining estimability of linear functions of regression coefficients,  and 'epredict' methods that handle non-estimable cases correctly.
+Summary: Provides tools for determining estimability of linear functions  of regression coefficients, and 'epredict' methods that handle  non-estimable cases correctly. Estimability theory is discussed in many linear-models textbooks including Chapter 3 of Monahan, JF (2008),  "A Primer on Linear Models", Chapman and Hall (ISBN 978-1-4200-6201-4).
 
 
 
@@ -66,6 +66,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========

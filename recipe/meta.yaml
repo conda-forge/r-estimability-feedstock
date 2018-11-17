@@ -14,9 +14,9 @@ source:
   sha256: a33179c5fbd6a1a623d90cb6f1743148f92c09429fac466867f3ea70946a2e32
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,8 +42,7 @@ about:
     theory is discussed in many linear-models textbooks including Chapter 3 of Monahan,
     JF (2008),  "A Primer on Linear Models", Chapman and Hall (ISBN 978-1-4200-6201-4).
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:

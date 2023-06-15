@@ -1,11 +1,11 @@
-About r-estimability
-====================
+About r-estimability-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-estimability-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=estimability
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-estimability-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides tools for determining estimability of linear functions  of regression coefficients, and 'epredict' methods that handle  non-estimable cases correctly. Estimability theory is discussed in many linear-models textbooks including Chapter 3 of Monahan, JF (2008),  "A Primer on Linear Models", Chapman and Hall (ISBN 978-1-4200-6201-4).
 

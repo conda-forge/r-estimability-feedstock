@@ -1,4 +1,4 @@
-{% set version = "1.5" %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/estimability_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/estimability/estimability_{{ version }}.tar.gz
-  sha256: b32c5f6157cbeaf96e42be3d4d33637de542debbc6dd2a9a19814980ed46dc68
+  sha256: 3ca6b96a39fd8877e8636f94d20f34308b7296c1376c646703d27df8591644e9
 
 build:
   merge_build_host: true  # [win]

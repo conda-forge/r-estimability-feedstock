@@ -12,7 +12,7 @@ source:
   sha256: b32c5f6157cbeaf96e42be3d4d33637de542debbc6dd2a9a19814980ed46dc68
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,7 +36,6 @@ about:
   license: GPL-3.0-or-later
   summary: Provides tools for determining estimability of linear functions  of regression coefficients, and 'epredict' methods that handle  non-estimable cases correctly. Estimability theory is discussed in many linear-models textbooks including Chapter 3 of Monahan, JF (2008),  "A Primer on Linear Models", Chapman and Hall
     (ISBN 978-1-4200-6201-4).
-  license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
